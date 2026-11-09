@@ -6,7 +6,7 @@
 
 | Priority | Inclusion | Collected URLs | CSV |
 |---|---|---:|---|
-| **P1** | Building architect, architecte confirmé / chargé or chef de projet, ~5 years, Paris + provisional 40 km | **144** | [P1 CSV](data/architecture_p1_paris_40km.csv) |
+| **P1** | Building architect, **architecte-urbaniste**, architecte confirmé / chargé or chef de projet, ~5 years, Paris + provisional 40 km | **144** | [P1 CSV](data/architecture_p1_paris_40km.csv) |
 | **P2** | Paris-area interior/retail, chantier-heavy, engineer-driven, or substantially overqualified roles | **48** | [P2 CSV](data/architecture_p2_related_or_overqualified.csv) |
 | **P3** | Architecture roles outside the Paris catchment, elsewhere in France | **24** | [P3 CSV](data/architecture_p3_france_outside_paris.csv) |
 
@@ -16,11 +16,22 @@
 
 - **These are collected job pages, not 144 independently verified open and eligible P1 vacancies.** Some adverts are historical, expired, or duplicated across recruiters despite different URLs. Active application status has not been established for the complete pool.
 - The original **107 P1 entries** are preserved as requested and have not all been re-audited for a five-year architect/project-manager profile.
-- **P1** means design-oriented *architecture du bâtiment* rather than IT/cloud/data architecture, with approximately **5 years** as the experience benchmark, not 10. P2 is useful but less aligned in experience or role. P3 is based on geography.
+- **P1** means design-oriented *architecture du bâtiment* **and architecte-urbaniste**, rather than IT/cloud/data architecture, with approximately **5 years** as the experience benchmark, not 10. P2 is useful but less aligned in experience or role. P3 is based on geography.
 - Publication dates sort **newest first** within each priority. For equal dates, approximate distance from Paris and title break ties; missing exact dates sort **last**. Relative LinkedIn timestamps have not been invented as absolute dates.
 - Paris jobs use **0** in the distance column as a *Paris city proxy*, not a geocoded exact distance. Suburban distances are approximate and the formal 40 km worksite check remains outstanding.
 - Only direct individual job pages or identifiable hiring posts count; generic search results do not. The Ordre des architectes also hosts **emploi-demande** candidate ads, which must be excluded.
 - The current datasets are URL-deduplicated across P1/P2/P3; distinct recruiter URLs might still represent one vacancy.
+
+### Clarification: *architecte-urbaniste* is included in P1
+
+The architect's combined professional scope includes **architecture and architectural urban design**, not urbanism in general.
+
+- **P1 searches:** `architecte urbaniste`, `architecte-urbaniste`, `architecte chef de projet urbain`, `architecte chargé de projet architecture et urbanisme`, `urban design architect`, `architecte conception urbaine`, `projet urbain` in architecture/design agencies, `masterplan`, `plan masse`, `composition urbaine`, `ZAC`, `écoquartier`, `aménagement urbain` **when the job involves spatial design or architectural conception**. Retain the approximately 5-year profile, Paris + provisional 40 km, and newest-first date sorting.
+- **P2:** landscape-only, interior/retail-only, policy/planning roles with minor architectural-design activity, or 8–15-year requirements near Paris.
+- **P3:** comparable architecte-urbaniste / conception urbaine jobs in **France** outside the Paris radius.
+- **Exclude:** urbanisme réglementaire/PLU/PLUi alone, ADS/instruction des permis only, GIS-only analysts, territorial administration, transport engineering without architectural/urban-design ownership, as well as IT/cloud architects.
+
+**Counting:** This adds a *search category and eligibility rule*, not new vacancies. The existing CSVs and **144 P1 / 48 P2 / 24 P3** totals are unchanged by this clarification. Only append separately verified individual vacancy pages to the correct CSV; don't invent new dates or URLs.
 
 ### Newly added in the latest pass
 
